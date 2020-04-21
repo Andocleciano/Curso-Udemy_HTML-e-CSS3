@@ -1,0 +1,40 @@
+/*
+Modelo de caixa
+
+
+.conteudo{
+border: 1px solid red;
+
+	(margem inerna) 
+padding-top: 20px (somente topo);
+padding-right: 20px (somente direita);
+padding-bottom: 20px (somente abaixo);
+padding-left: 20px (somente esquerda);
+padding:20px 15px 10px 5px; (começa no topo e vai sentido horario)
+padding: 20px (todos os lados mesmo tamanho);
+padding: 20px 5px; (topo/abaixo; direita/esquerda)
+
+	(Margem externa)
+margin-top: 20px (somente topo);
+margin-right: 20px (somente direita);
+margin-bottom: 20px (somente abaixo);
+margin-left: 20px (somente esquerda);
+margin:20px 15px 10px 5px; (começa no topo e vai sentido horario)
+margin: 20px (todos os lados mesmo tamanho);
+margin: 20px 5px; (topo/abaixo; direita/esquerda)
+margin: 20px;
+width: 150px;
+}
+*/
+
+/* Notícia */
+
+#noticia{
+	border: 1px solid gray;
+	background: #f9f9f9;
+	padding: 10px;
+}
+
+h2{
+	margin:0px;
+}
