@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Lógicos</title>
+</head>
+<body>
+    
+    <script>
+        /* E (&&) - Verdadeiro se todas as expressões forem verdadeiras
+            OU (||) - Verdadeiro se pelo menos uma expressão for verdadeira
+            Negação (!) - Inverte o resultado da expressão de uma comparação */
+
+        //E(&&)
+        /*if(2 == 2 && 3 >= 1 && 'a ' == 'b'){
+            document.write('verdadeiro')
+        }   else {
+            document.write('falso')
+        } */
+
+        //OU (||)
+       /* if(2 == 2 || 3 >= 1 || 'a ' == 'b'){
+            document.write('verdadeiro')
+        }   else {
+            document.write('falso')
+        } */
+
+        // Negação (!)
+      /* if(!(7 > 2)){
+            document.write('verdadeiro')
+        }   else {
+            document.write('falso')
+        }*/ 
+
+        var mediaFinal = prompt('Digite sua média final: ') 
+        var faltas = prompt('Digite a quantidade de faltas: ')
+        var mediaCompare = 7
+        var faltasMaximas = 15
+
+        // Lógica if
+        /*if (mediaFinal >= mediaCompare && faltas <= faltasMaximas) {
+            document.write('Parabéns! Você foi aprovado!')
+        } else{
+            document.write('Que pena! Você foi reprovado!')
+        }*/
+
+        // Operador Ternário
+        var resultado = (mediaFinal >= mediaCompare && faltas <= faltasMaximas) ? 'Aprovado' : 'Reprovado'
+        document.write(resultado)
+    </script>
+
+</body>
+</html>

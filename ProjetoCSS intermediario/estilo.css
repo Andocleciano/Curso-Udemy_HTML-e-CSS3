@@ -1,3 +1,4 @@
+
 /*
 Modelo de caixa
 
@@ -27,7 +28,7 @@ width: 150px;
 }
 */
 
-/* Notícia 
+/*Notícia */
 
 #noticia{
 	border: 1px solid gray;
@@ -37,5 +38,5 @@ width: 150px;
 
 h2{
 	margin:0px;
-}*/
+}
 
