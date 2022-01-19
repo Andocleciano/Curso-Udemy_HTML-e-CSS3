@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+</head>
+<body>
+    <script>
+         /*var largura = prompt ('Digite a largura do terreno em metros:')
+        var comprimento = prompt ('Digite o comprimento do terreno em metros:')
+
+        var area = calcularAreaTerreno (parseInt(largura), parseInt(comprimento))
+
+        document.write ('O terreno possui ' + area+ ' metros quadrados')
+
+
+        function calcularAreaTerreno (largura, comprimento){
+            // lógica - pode ser uma estrutura de repetição, condicionais, swtch, declarar vaiáveis, entre outros.
+            
+            var area = largura * comprimento
+            return area
+        }*/
+
+        function soma (a,b){
+            // no caso do NaN, pode-se resolver o problema com um operador ternário:
+           //b = b === undefined ? 0 : b
+            return a + b
+        }
+
+        console.log(soma(7,7,19,8)) // a aplicação irá ignorar os parâmetros adicionais, pois na função está pedindo paenas dois parâmetros.
+        console.log(soma(7)) // o resultado seria NaN (Not a Number) pois o segundo argumento é undefined
+
+    </script>
+</body>
+</html>

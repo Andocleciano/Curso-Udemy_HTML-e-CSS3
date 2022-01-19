@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escopo de Variáveis</title>
+</head>
+
+<body>
+    <script>
+        /* 3 escopos de bloco: global, função e bloco
+        global -  escopo do script como um todo
+        função - conteúdo inserido dentro de um bloco de função
+        bloco -  instruções contidas dentro dos comandos (if, swtch...)*/
+        // caso 1
+        /*var comida = 'pizza';
+        function pedirComida () {
+            document.write (comida + '<br>');
+        } // A variável declarada é global por que está declarada fora da função
+
+        pedirComida ();
+        document.write ('Eu quero ' + comida)*/
+
+        // caso 2
+
+        /* function pedirComida () {
+             var comida = 'pizza';
+             document.write (comida + '<br>');
+         } // A variável declarada é LOCAL por que está declarada dentro da função.
+ 
+         pedirComida ();
+         document.write ('Eu quero ' + comida)// Quando envocada fora da função, não consegue acessar a vaiavel por ser global.*/
+
+        // Caso 3
+        function pedirComida() {
+            comida = 'pizza';
+            document.write(comida + '<br>');
+        } // A variável declarada é considerada GLOBAL por que não contém a instrução "var"
+
+        pedirComida();
+        document.write('Eu quero ' + comida); // Com iss, a variavel comida, mesmo declarada dentro da função, consegue ser acessada.
+
+
+        // Evitar  declarar variaveis GLOBAL, 
+    </script>
+</body>
+
+</html>

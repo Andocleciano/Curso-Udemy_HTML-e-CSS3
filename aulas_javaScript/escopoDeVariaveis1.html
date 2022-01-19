@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escopo de variáveis</title>
+</head>
+<body>
+    <script>
+
+        /* 3 tipo de escopos: Global - Escopo do script como um todo
+                                          Bloco - Instruções contidas dentro de comandos (if, switch... )
+                                          Função - Corresponde ao conteúdo inserido dentro de um bloco de função */ 
+
+      
+      var series  = 'friends'   // declaração de variavel  escopo global
+      
+        // escopo de bloco
+      if (true) {
+          var series2 = 'Game of Thrones'
+          document.write (series) // Mesmo ela estando dentro do escopo de bloco ela sofre um hoisting (elevação) e consegue acessar a variavel que é global.
+      }
+
+      //Aqui faz parte do escopo global
+      document.write(series2) // Mesmo declarando uma varial dentro do escopo do bloco, consigo acessar no escopo global
+      document.write('<br />')
+
+        // escopo da função
+      function x () {
+          var series3 = 'The Walking Dead' // Nesse caso, não sofre hoisting, pois no escopo da funçã (diferentre do escopo do bloco), faz com que as funções declaradas dentro dele, fiquem somente disponiveis no seu respectivo escopo.
+          document.write (series)// Mesmo ela estando dentro do escopo de função ela sofre um hoisting (elevação) e consegue acessar a variavel que é global.
+          document.write(series2)//  // Mesmo declarando uma varial dentro do escopo do bloco, consigo acessar dentro do escopo da função devido ao hoisting.
+      }
+      x()
+
+      document.write ('<br />')
+      document.write (series3) // Como o comando está fora do escopo da função, não consegue imprimir nada, pois não sofre hoisting.
+    </script>
+</body>
+</html>
